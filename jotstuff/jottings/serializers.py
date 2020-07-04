@@ -4,4 +4,4 @@ from .models import Jotting
 class JottingSerializer(serializers.ModelSerializer):
   class Meta:
     model = Jotting
-    fields = ('id', 'owner', 'title', 'body', 'created_at')
+    fields = ('id', 'owner', 'title', 'body', 'created_at',)
