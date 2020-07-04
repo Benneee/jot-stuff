@@ -18,5 +18,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/jottings/', include('jottings.urls')) # Did this because of when I have multiple apps within a project
+    path('api/v1/jottings/', include('jottings.urls')), # Did this because of when I have multiple apps within a project
+    path('api-auth/', include('rest_framework.urls')) # For permissions
 ]
